@@ -32,7 +32,7 @@ The system is designed to be **simple, fast, and deployable**, with a user-frien
 ## 🏗️ Project Architecture
 
 ```text
-Dataset → Data Preprocessing → Feature Selection → Model Training → Prediction → Streamlit UI
+Dataset → Data Preprocessing → Feature Selection → Model Training → Prediction
 ```
 
 ---
@@ -74,57 +74,12 @@ Dataset → Data Preprocessing → Feature Selection → Model Training → Pred
 
 ---
 
-## 🚀 Installation & Setup
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/your-username/customer-churn-prediction.git
-cd customer-churn-prediction
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run Application
-
-```bash
-streamlit run app.py
-```
-
----
-
 ## 📸 Demo
 
 * Input customer details
 * Click "Predict"
 * Get result: **Churn / No Churn**
 * View insights in sidebar
-
----
-
-## 👥 Team Collaboration (3 Members)
-
-### 🔹 Member 1 – Problem & Data
-
-* Defined problem statement
-* Data collection and preprocessing
-* Feature selection
-
-### 🔹 Member 2 – Model Development
-
-* Model selection (Random Forest)
-* Training and evaluation
-* Performance optimization
-
-### 🔹 Member 3 – Application & UI
-
-* Streamlit app development
-* User interface design
-* Integration of model with UI
 
 ---
 
