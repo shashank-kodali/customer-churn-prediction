@@ -16,7 +16,7 @@ based on usage patterns, subscription history, and account information.
 - Categorize customers into Low / Medium / High risk groups
 
 ## 📁 Project Structure
-
+```
 customer-churn-prediction/
 ├── notebooks/
 │   ├── 01_EDA.ipynb
@@ -32,18 +32,17 @@ customer-churn-prediction/
 │   ├── feature_importance.png
 │   └── risk_categorization.png
 └── requirements.txt
-
+```
 
 ## 📊 Dataset
 **Telco Customer Churn Dataset** — [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-- 7,043 customers
-- 21 features including tenure, contract type, monthly charges
+- 7,043 customers | 21 features
 
 ## 🤖 ML Pipeline
 | Step | Description |
 |------|-------------|
 | EDA | Explored churn patterns across all features |
-| Preprocessing | Handled nulls, label encoding, one-hot encoding, scaling |
+| Preprocessing | Handled nulls, encoding, scaling |
 | Feature Engineering | Tenure groups, average monthly spend |
 | Class Balancing | SMOTE to handle 26% churn imbalance |
 | Models Trained | Logistic Regression, Random Forest, XGBoost |
@@ -53,7 +52,6 @@ customer-churn-prediction/
 | Metric | Score |
 |--------|-------|
 | ROC-AUC | ~0.85+ |
-| Model | Best of 3 (auto-selected) |
 | Risk Groups | Low / Medium / High |
 
 ## 🚀 How to Run
