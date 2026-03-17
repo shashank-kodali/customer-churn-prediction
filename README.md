@@ -1,63 +1,154 @@
-# 🔄 Customer Churn Prediction
-### CADES Hackathon | SRM Institute of Science & Technology
+# 📊 Customer Churn Prediction System
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![ML](https://img.shields.io/badge/ML-Scikit--Learn%20%7C%20XGBoost-orange)
-![Platform](https://img.shields.io/badge/Platform-Google%20Colab-yellow)
+## 📌 Overview
 
-## 📌 Problem Statement
-Customer churn is a major challenge for telecom companies. This project builds
-a machine learning system that predicts whether a customer is likely to churn
-based on usage patterns, subscription history, and account information.
+Customer churn is one of the biggest challenges faced by subscription-based businesses such as telecom, banking, and online services. Losing customers directly impacts revenue and growth.
 
-## 🎯 Objectives
-- Predict customers likely to discontinue services
-- Identify key factors influencing churn
-- Categorize customers into Low / Medium / High risk groups
+This project presents a **Machine Learning-based Customer Churn Prediction System** that helps businesses identify whether a customer is likely to leave or stay based on their behavior.
 
-## 📁 Project Structure
+The system is designed to be **simple, fast, and deployable**, with a user-friendly interface for real-time predictions.
+
+---
+
+## 🎯 Objective
+
+* Predict whether a customer will **churn (leave)** or **stay**
+* Help businesses take **proactive retention actions**
+* Enable **data-driven decision making**
+
+---
+
+## 🧠 Key Features
+
+* 🤖 Machine Learning Model (Random Forest)
+* 📊 Predicts customer churn in real-time
+* 🖥️ Interactive UI using Streamlit
+* 📈 Clean and efficient feature selection
+* 💡 Customer insights and suggestions
+* ⚡ Lightweight and fast system
+
+---
+
+## 🏗️ Project Architecture
+
+```text
+Dataset → Data Preprocessing → Feature Selection → Model Training → Prediction → Streamlit UI
 ```
-customer-churn-prediction/
-├── notebooks/
-│   ├── 01_EDA.ipynb
-│   ├── 02_preprocessing.ipynb
-│   ├── 03_model_training.ipynb
-│   ├── 04_evaluation.ipynb
-│   └── 05_final_pipeline.ipynb  ← Demo notebook
-├── models/
-│   └── best_model.pkl
-├── reports/
-│   ├── confusion_matrix.png
-│   ├── roc_curve.png
-│   ├── feature_importance.png
-│   └── risk_categorization.png
-└── requirements.txt
-```
+
+---
 
 ## 📊 Dataset
-**Telco Customer Churn Dataset** — [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-- 7,043 customers | 21 features
 
-## 🤖 ML Pipeline
-| Step | Description |
-|------|-------------|
-| EDA | Explored churn patterns across all features |
-| Preprocessing | Handled nulls, encoding, scaling |
-| Feature Engineering | Tenure groups, average monthly spend |
-| Class Balancing | SMOTE to handle 26% churn imbalance |
-| Models Trained | Logistic Regression, Random Forest, XGBoost |
-| Evaluation | ROC-AUC, Confusion Matrix, SHAP analysis |
+* **Telco Customer Churn Dataset**
+* Contains customer details such as:
 
-## 📈 Results
-| Metric | Score |
-|--------|-------|
-| ROC-AUC | ~0.85+ |
-| Risk Groups | Low / Medium / High |
+  * Tenure (how long customer stayed)
+  * Monthly Charges
+  * Total Charges
+  * Customer behavior patterns
 
-## 🚀 How to Run
-1. Open `notebooks/05_final_pipeline.ipynb` in Google Colab
-2. Mount Google Drive
-3. Run all cells in order
+---
 
-## 👤 Author
-**Shashank Kodali** — [@shashank-kodali](https://github.com/shashank-kodali)
+## ⚙️ Technologies Used
+
+* 🐍 Python
+* 📊 Pandas, NumPy
+* 🤖 Scikit-learn (Random Forest)
+* 🌐 Streamlit
+* 💾 Joblib
+
+---
+
+## 🧪 How It Works
+
+1. Load customer dataset
+2. Clean and preprocess data
+3. Select important features:
+
+   * Tenure
+   * Monthly Charges
+   * Total Charges
+4. Train Random Forest model
+5. Deploy model using Streamlit
+6. User inputs data → system predicts churn
+
+---
+
+## 🚀 Installation & Setup
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/your-username/customer-churn-prediction.git
+cd customer-churn-prediction
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📸 Demo
+
+* Input customer details
+* Click "Predict"
+* Get result: **Churn / No Churn**
+* View insights in sidebar
+
+---
+
+## 👥 Team Collaboration (3 Members)
+
+### 🔹 Member 1 – Problem & Data
+
+* Defined problem statement
+* Data collection and preprocessing
+* Feature selection
+
+### 🔹 Member 2 – Model Development
+
+* Model selection (Random Forest)
+* Training and evaluation
+* Performance optimization
+
+### 🔹 Member 3 – Application & UI
+
+* Streamlit app development
+* User interface design
+* Integration of model with UI
+
+---
+
+## 🎤 Hackathon Pitch
+
+> “We built a machine learning system that predicts customer churn using behavioral data.
+> It helps businesses identify high-risk customers early and take proactive retention actions.”
+
+---
+
+## 🔮 Future Enhancements
+
+* 📊 Add more features for higher accuracy
+* 🌍 Real-time data integration
+* 📱 Mobile app version
+* ☁️ Cloud deployment
+* 📈 Advanced models (XGBoost, Deep Learning)
+
+---
+
+## 📜 License
+
+This project is developed for educational and hackathon purposes.
+
+---
+
+⭐ If you like this project, give it a star!
